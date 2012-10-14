@@ -1,0 +1,8 @@
+<h1>Todo list</h1>
+
+<% @todo_lists.each do |t| %>
+	<h3><%= t.title%>- <%= link_to "Edit", edit_todo_list_url(t) %> | <%= link_to "Finish", todo_list_url(t), :method => :delete %></h3>
+	<br />
+<%end%>
+
+<%= link_to "Create todo", new_todo_list_url %>

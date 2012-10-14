@@ -1,0 +1,12 @@
+<h1>Welcome to todo list application</h1>
+
+<%= form_for @user do |form| %>
+	
+	<label>please enter your email :
+		<p><%= form.text_field :email %></p>
+	</label>
+	
+	<p><%= form.submit %></p>
+	<%= link_to "Create new user", new_user_url %>
+	
+<% end %>

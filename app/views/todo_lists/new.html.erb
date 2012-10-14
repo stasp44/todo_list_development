@@ -1,0 +1,19 @@
+<h1>Create a new todo </h1>
+
+<%= form_for @todo_lists do |form| %>
+	
+	<label>Title:
+		<p><%= form.text_field :title %></p>
+	</label>
+	
+	<label>Description:
+		<p><%= form.text_field :description %></p>
+	</label>
+
+	<label>Due date:
+		<p><%= form.text_field :due_date %></p>
+	</label>
+	
+	<p><%= form.submit %></p>
+	
+<% end %>
